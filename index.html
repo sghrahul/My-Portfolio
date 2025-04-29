@@ -8,236 +8,81 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">RAHUL</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </div>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </nav>
+    <!-- Left Static Column -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="assets/images/profile-placeholder.jpg" alt="Profile">
+            <h1>Rahul Singh</h1>
+            <p>Assistant Manager @ Bajaj Auto</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span>Rahul Singh</span></h1>
-                <h2>Assistant Manager @ Bajaj Auto Ltd.</h2>
-                <p>Mechanical Engineer | Automotive R&D Specialist | IIT Kanpur Alumnus</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn primary">Contact Me</a>
-                    <a href="#" class="btn secondary">Download CV</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/400x400" alt="Profile Image">
-            </div>
+        
+        <div class="contact-info">
+            <ul>
+                <li><i class="fas fa-envelope"></i> rahul.singh@example.com</li>
+                <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                <li><i class="fas fa-map-marker-alt"></i> Pune, India</li>
+            </ul>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Mechanical Engineer from IIT Kanpur</h3>
-                    <p>I specialize in automotive R&D with expertise in vehicle body design and thermal management systems. Currently working as Assistant Manager at Bajaj Auto Ltd. in the BIW Division.</p>
-                    <p>My work focuses on optimizing vehicle components through innovative engineering solutions, combining hands-on plant experience with advanced simulation techniques.</p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>B.Tech Mechanical Engineering<br>IIT Kanpur (CGPA: 8.6/10)</p>
-                            </div>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h4>Experience</h4>
-                                <p>2+ years in Automotive R&D<br>Bajaj Auto Ltd.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/300x400" alt="About Image">
-                </div>
-            </div>
+        <div class="skills">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Siemens NX</li>
+                <li>Ansys</li>
+                <li>SolidWorks</li>
+                <li>MATLAB</li>
+                <li>Python</li>
+            </ul>
         </div>
-    </section>
+    </aside>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-item">
-                        <p>Siemens NX</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <p>Ansys</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <p>SolidWorks</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skill-item">
-                        <p>Python</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <p>MATLAB</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <p>C++</p>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Right Scrolling Column -->
+    <main class="content">
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Mechanical Engineering graduate from IIT Kanpur with expertise in automotive design and thermal management systems. Currently leading R&D initiatives at Bajaj Auto's BIW Division.</p>
+        </section>
+
+        <!-- Experience -->
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Bajaj Auto Ltd. (2021-Present)</h3>
+                <p>Led door system design for Qute vehicle platform. Optimized structural components achieving 15% weight reduction.</p>
+                <img src="assets/images/experience1-placeholder.jpg" alt="Bajaj Project">
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
+        <!-- Projects -->
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Formula Student">
-                    </div>
-                    <div class="project-info">
-                        <h3>Formula Student EV @ IITK</h3>
-                        <p>Designed spaceframe chassis and optimized brake pedal system achieving 24% weight reduction.</p>
-                        <div class="project-tags">
-                            <span>CAD</span>
-                            <span>FEA</span>
-                            <span>Vehicle Dynamics</span>
-                        </div>
-                        <a href="#" class="project-link">View Details</a>
-                    </div>
+                    <img src="assets/images/project1-placeholder.jpg" alt="Formula Student">
+                    <h3>Formula Student EV</h3>
+                    <p>Designed chassis achieving 24% weight reduction</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Battery Cooling">
-                    </div>
-                    <div class="project-info">
-                        <h3>EV Battery Cooling System</h3>
-                        <p>Developed thermal management solution achieving 36% peak temperature reduction through CFD analysis.</p>
-                        <div class="project-tags">
-                            <span>Thermal Analysis</span>
-                            <span>CFD</span>
-                            <span>PCM</span>
-                        </div>
-                        <a href="#" class="project-link">View Details</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Self-Balancing Robot">
-                    </div>
-                    <div class="project-info">
-                        <h3>Self-Balancing Robot</h3>
-                        <p>Implemented LQR controller with Kalman filter for stable autonomous operation.</p>
-                        <div class="project-tags">
-                            <span>Controls</span>
-                            <span>ROS</span>
-                            <span>Simulink</span>
-                        </div>
-                        <a href="#" class="project-link">View Details</a>
-                    </div>
+                    <img src="assets/images/project2-placeholder.jpg" alt="Battery Cooling">
+                    <h3>Battery Cooling System</h3>
+                    <p>36% temperature reduction using PCM</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>rahul.singh@example.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+91 9876543210</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Pune, Maharashtra, India</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+        <!-- Education -->
+        <section class="section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>IIT Kanpur (2017-2021)</h3>
+                    <p>B.Tech Mechanical Engineering</p>
+                    <p>CGPA: 8.6/10</p>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Rahul Singh. All rights reserved.</p>
-        </div>
-    </footer>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
